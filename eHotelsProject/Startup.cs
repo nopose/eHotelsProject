@@ -28,11 +28,11 @@ namespace eHotelsProject
 
             services.AddMvc();
 
-            services.AddDbContext<DBContext>(options =>
+            services.AddDbContext<DBProjectContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<AppUser, IdentityRole>()
-           .AddEntityFrameworkStores<DBContext>()
+           .AddEntityFrameworkStores<DBProjectContext>()
            .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>

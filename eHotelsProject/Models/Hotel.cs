@@ -13,6 +13,7 @@ namespace eHotelsProject.Models
 
         public int Hid { get; set; }
         public int Hcid { get; set; }
+        public string HotelName { get; set; }
         public int Manager { get; set; }
         public int Category { get; set; }
         public int NumRooms { get; set; }

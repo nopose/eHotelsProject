@@ -15,13 +15,13 @@ namespace eHotelsProject.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly DBContext _context;
+        private readonly DBProjectContext _context;
         private IMemoryCache _cache;
 
         public HomeController(
                     UserManager<AppUser> userManager,
                     SignInManager<AppUser> signInManager,
-                    DBContext context,
+                    DBProjectContext context,
                     IMemoryCache cache)
         {
             _userManager = userManager;
@@ -33,7 +33,7 @@ namespace eHotelsProject.Controllers
 
         public IActionResult Index()
         {
-            var test = _context.Hotelchain.FromSql("SELECT * FROM project.hotelChain WHERE hcid = 1").ToList();
+            var test = _context.Hotelchain.FromSql("SELECT * FROM eHotel.hotelChain WHERE hcid = 1").ToList();
             return View();
         }
 

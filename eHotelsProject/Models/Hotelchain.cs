@@ -13,6 +13,7 @@ namespace eHotelsProject.Models
         }
 
         public int Hcid { get; set; }
+        public string HotelChainName { get; set; }
         public int StreetNumber { get; set; }
         public string StreetName { get; set; }
         public int? AptNumber { get; set; }
