@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="h-100">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +15,17 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    @*
+        <!-- Bootstrap core CSS-->
+        <link href="~/style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template-->*@
+        <link href="~/style/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template-->
+        <link href="~/style/css/sb-admin.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
 </head>
-<body>
+<body id="body" class="h-100">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -37,10 +46,10 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container body-content h-100">
         @RenderBody()
-        <hr />
-        <footer>
+        <footer id="footer">
+            <hr />
             <p>&copy; 2019 - eHotelsProject</p>
         </footer>
     </div>

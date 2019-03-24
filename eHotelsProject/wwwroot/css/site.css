@@ -1,6 +1,41 @@
-﻿body {
+﻿#body {
+    position: relative;
+    min-height: 95vh;
+}
+
+.body-content {
+    padding-bottom: 2.5rem; /* Footer height */
+    width:90%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    height: 2.5rem; /* Footer height */
+}
+.h-100 {
+    height: 100% !important;
+}
+
+.h-50 {
+    height: 50% !important;
+}
+
+#homeBackground {
+    background: url("/../images/boats.jpg");
+    height: 110%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* Wrapping element */
