@@ -1,5 +1,7 @@
-﻿<div class="container h-50" id="homeBackground"></div>
-<div class="container h-50" style="margin-top:5%;">
+﻿<div class="mx-auto d-block" id="homeBackground">
+    <img id="homeImage" src="/../images/boats.jpg">
+</div>
+<div class="container h-50" style="margin-top:5%; margin-bottom:15%;">
     <div class="row w-100 text-center">
         <div class="col-md-12">
             <h1 id="homeTitle" class="display-3 text-white font-weight-bold">Welcome to eHotels!</h1>
@@ -7,15 +9,15 @@
     </div>
     <div class="row text-center">
         <div class="col-md-4 text-center" style="padding-top:3%;">
-            @Html.ActionLink("Book a room !", "SearchBooking", "Home", null, new { @class = "btn btn-primary col-xs-12", style = "margin: 0.5rem" })
+            @Html.ActionLink("Book a room !", "SearchRoom", "Home", null, new { @class = "btn btn-primary col-md-12", style = "margin: 0.5rem" })
 
         </div>
         <div class="col-md-4 text-center" style="padding-top:3%;">
-            @Html.ActionLink("Register now !", "Register", "Account", null, new { @class = "btn btn-primary col-xs-12", style = "margin: 0.5rem" })
+            @Html.ActionLink("Register now !", "Register", "Account", null, new { @class = "btn btn-primary col-md-12", style = "margin: 0.5rem" })
 
         </div>
         <div class="col-md-4 text-center" style="padding-top:3%;">
-            @Html.ActionLink("Login to your account !", "Login", "Account", null, new { @class = "btn btn-primary col-xs-12", style = "margin: 0.5rem" })
+            @Html.ActionLink("Login to your account !", "Login", "Account", null, new { @class = "btn btn-primary col-md-12", style = "margin: 0.5rem" })
 
         </div>
     </div>
